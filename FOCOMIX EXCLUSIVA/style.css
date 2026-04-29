@@ -1,0 +1,130 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* FUNDO (DEGRADÊ) */
+body {
+  min-height: 100vh;
+
+  background:
+    linear-gradient(to top,
+      rgba(59,130,246,0.25),
+      rgba(239,68,68,0.25),
+      rgba(255,255,255,0)
+    ) bottom,
+    linear-gradient(to bottom, #ffffff, #f8fafc);
+
+  background-repeat: no-repeat;
+  background-size: 100% 50%, 100% 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 40px;
+}
+
+/* PAINEL CENTRAL */
+.dashboard {
+  width: 1400px;
+
+  background: #f1f5f9;
+  border-radius: 24px;
+  padding: 30px;
+
+  box-shadow: 0 20px 40px rgba(0,0,0,0.12);
+  border: 1px solid #e5e7eb;
+}
+
+/* TOPO */
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.logo-left,
+.logo-right {
+  height: 40px;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.box-interna {
+  margin-top: 15px;
+  background: #f1f5f9;
+  border-radius: 16px;
+  flex: 1;
+}
+
+/* MAIN */
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* KPIs */
+.kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.kpi {
+  height: 90px;
+}
+
+/* LINHAS */
+.linha-2 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 15px;
+}
+
+/* CARDS */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 18px;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+
+  font-size: 14px;
+  color: #374151;
+}
+
+/* TAMANHOS AJUSTADOS */
+.grande {
+  height: 200px;
+}
+
+.medio {
+  height: 140px;
+}
+
+.alto {
+  height: 200px;
+}
